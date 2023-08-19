@@ -1,11 +1,16 @@
 import GlobalStyles from "./components/GlobalStyles";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 const App = () => {
   return (
-    <div>
+    <>
       <GlobalStyles />
-      <h1>Let's get it started baby</h1>
-    </div>
+      <Header />
+      <Hero />
+      <About />
+    </>
   );
 };
 
