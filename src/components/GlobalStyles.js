@@ -49,12 +49,15 @@ h6 {
 }
 
 //
-
 :root {
     --darkest: #1e2022;
     --dark: #52616a;
     --light: #c9d6de;
     --lightest: #f0f5f9;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {

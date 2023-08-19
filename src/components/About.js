@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
+import Wrapper from "./UI/Wrapper";
 
 const About = () => {
   return (
     <Wrapper>
-      <div>
-        <h2>About</h2>
+      <section id="about">
+        <h2>About me</h2>
         <p>
           I am web developer who is passionate about life-long learning,
           building things, and solving intricate problems.
@@ -25,14 +26,9 @@ const About = () => {
           solutions that are not only functional but also aesthetically
           engaging.
         </p>
-      </div>
+      </section>
     </Wrapper>
   );
 };
-
-const Wrapper = styled.div`
-  width: 70%;
-  margin: auto;
-`;
 
 export default About;

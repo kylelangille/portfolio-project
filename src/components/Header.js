@@ -6,10 +6,18 @@ const Header = () => {
       <Nav>
         <h2>Kyle Langille</h2>
         <NavList>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <a href="#hero">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </NavList>
       </Nav>
     </Wrapper>
@@ -18,6 +26,9 @@ const Header = () => {
 
 const Wrapper = styled.header`
   background: #1e2022;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 `;
 
 const Nav = styled.nav`
@@ -35,9 +46,18 @@ const Nav = styled.nav`
 const NavList = styled.ul`
   list-style-type: none;
 
+  a {
+    color: var(--light);
+  }
+
   li {
     float: left;
     margin-right: 2rem;
+    transition: 0.2s all ease-in-out;
+  }
+
+  li:hover {
+    transform: scale(1.1);
   }
 `;
 
