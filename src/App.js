@@ -1,11 +1,12 @@
-import "./App.css";
+import GlobalStyles from "./components/GlobalStyles";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
+      <GlobalStyles />
       <h1>Let's get it started baby</h1>
     </div>
   );
-}
+};
 
 export default App;
