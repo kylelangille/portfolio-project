@@ -3,19 +3,17 @@ import Wrapper from "./UI/Wrapper";
 
 const Hero = () => {
   return (
-    <Wrapper>
-      <section id="hero">
-        <SubWrapper>
-          <HeroImg
-            src="moi-crop.jpg"
-            alt="Kyle Langille standing on a wharf with an old fishing community in the background"
-          />
-          <Content>
-            <Heading>Hi, I'm Kyle!</Heading>
-            <SubHeading>A Web Developer based in St. John's, NL 🍁</SubHeading>
-          </Content>
-        </SubWrapper>
-      </section>
+    <Wrapper id="hero">
+      <SubWrapper>
+        <HeroImg
+          src="moi-crop.jpg"
+          alt="Kyle Langille standing on a wharf with an old fishing community in the background"
+        />
+        <Content>
+          <Heading>Hi, I'm Kyle!</Heading>
+          <SubHeading>A Web Developer based in St. John's, NL 🍁</SubHeading>
+        </Content>
+      </SubWrapper>
     </Wrapper>
   );
 };
