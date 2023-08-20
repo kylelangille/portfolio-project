@@ -10,18 +10,18 @@ const Header = () => {
           <Menu />
         </IconWrapper>
         <NavList>
-          <a href="#hero">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About</li>
-          </a>
-          <a href="#projects">
-            <li>Projects</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          <li>
+            <a href="#hero">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </NavList>
       </Nav>
     </Wrapper>
@@ -64,6 +64,12 @@ const NavList = styled.ul`
 
   a {
     color: var(--light);
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+  }
+
+  a:hover {
+    color: var(--lightest);
   }
 
   li {

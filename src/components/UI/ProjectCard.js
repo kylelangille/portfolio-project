@@ -7,8 +7,12 @@ const ProjectCard = ({ title, description, src, alt, repoLink, demoLink }) => {
       <p>{description}</p>
       <ProjectImg src={src} alt={alt} />
       <BtnContainer>
-        <a href={repoLink}>View Code</a>
-        <a href={demoLink}>Demo</a>
+        <a href={repoLink} target="_blank" rel="noreferrer">
+          View Code
+        </a>
+        <a href={demoLink} target="_blank" rel="noreferrer">
+          Live Demo
+        </a>
       </BtnContainer>
     </Card>
   );
@@ -47,14 +51,15 @@ const ProjectImg = styled.img`
   max-width: 20rem;
   max-height: 20rem;
   border-radius: 9px;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 `;
 
 const BtnContainer = styled.div`
   display: flex;
   gap: 50px;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
+  margin-bottom: 1rem;
 `;
 
 export default ProjectCard;
