@@ -1,11 +1,12 @@
 import { styled } from "styled-components";
 import Wrapper from "./UI/Wrapper";
+import Heading from "./UI/Heading";
 
 const Projects = () => {
   return (
     <Wrapper>
       <section id="projects">
-        <h2>Projects</h2>
+        <Heading>Projects</Heading>
       </section>
     </Wrapper>
   );

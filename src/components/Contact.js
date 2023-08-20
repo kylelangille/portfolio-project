@@ -1,12 +1,14 @@
 import { styled } from "styled-components";
 import Wrapper from "./UI/Wrapper";
+import Heading from "./UI/Heading";
+import Content from "./UI/Content";
 
 const Contact = () => {
   return (
     <Wrapper>
       <section id="contact">
-        <h2>Contact</h2>
-        <p>Have a question? Want to work with me?</p>
+        <Heading>Contact</Heading>
+        <Content>Have a question? Want to work with me?</Content>
         <a href="mailto:kyle.a.langille@gmail.com">
           <Button>Email me!</Button>
         </a>
