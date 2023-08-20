@@ -6,6 +6,7 @@ const Content = ({ children }) => {
 
 const Text = styled.p`
   color: var(--lightest);
+  font-size: 1.2rem;
 `;
 
 export default Content;

@@ -23,9 +23,11 @@ const Footer = () => {
 };
 
 const Foot = styled.footer`
-  position: sticky;
-  bottom: 0;
-  margin: 0 auto;
+  position: fixed;
+  bottom: -20px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 7rem;
   display: flex;
   justify-content: space-evenly;
