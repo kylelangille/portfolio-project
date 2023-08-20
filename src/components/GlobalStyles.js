@@ -65,4 +65,21 @@ body {
     background: var(--dark);
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--darkest);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
 `;
