@@ -27,6 +27,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   margin-top: 2rem;
+  font-size: 1.2rem;
 
   &:hover {
     color: var(--lightest);
