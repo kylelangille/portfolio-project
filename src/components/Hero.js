@@ -36,7 +36,7 @@ const Heading = styled.h1`
   color: var(--light);
   margin-bottom: 1rem;
 
-  width: 9ch;
+  width: 9.2ch;
   animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
