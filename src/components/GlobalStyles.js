@@ -56,7 +56,7 @@ h6 {
     --lightest: #f0f5f9;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
