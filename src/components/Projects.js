@@ -4,8 +4,9 @@ import Wrapper from "./UI/Wrapper";
 const Projects = () => {
   return (
     <Wrapper>
-      <h2>Projects</h2>
-      <section id="projects"></section>
+      <section id="projects">
+        <h2>Projects</h2>
+      </section>
     </Wrapper>
   );
 };
