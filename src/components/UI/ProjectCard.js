@@ -8,7 +8,6 @@ const ProjectCard = ({ title, description, src, alt, repoLink, demoLink }) => {
       <ProjectImg src={src} alt={alt} />
       <BtnContainer>
         <a href={repoLink}>View Code</a>
-
         <a href={demoLink}>Demo</a>
       </BtnContainer>
     </Card>
@@ -25,6 +24,8 @@ const Card = styled.div`
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
+  color: var(--darkest);
+  position: relative;
 
   a {
     color: var(--darkest);
@@ -43,13 +44,17 @@ const Card = styled.div`
 `;
 
 const ProjectImg = styled.img`
-  max-width: 25rem;
-  max-height: 25rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  border-radius: 9px;
+  margin-bottom: 2rem;
 `;
 
 const BtnContainer = styled.div`
   display: flex;
   gap: 50px;
+  position: absolute;
+  bottom: 0;
 `;
 
 export default ProjectCard;
