@@ -58,6 +58,11 @@ const ProjectImg = styled.img`
   max-height: 20rem;
   border-radius: 9px;
   margin-bottom: 2.2rem;
+
+  @media (max-width: 460px) {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
 `;
 
 const BtnContainer = styled.div`

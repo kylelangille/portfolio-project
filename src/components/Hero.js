@@ -28,6 +28,7 @@ const SubWrapper = styled.div`
   @media (max-width: 560px) {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 100px;
   }
 `;
@@ -47,7 +48,6 @@ const Heading = styled.h1`
   font-size: 4rem;
   color: var(--light);
   margin-bottom: 1rem;
-
   width: 9.2ch;
   animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
@@ -71,7 +71,8 @@ const Heading = styled.h1`
   }
 
   @media (max-width: 560px) {
-    margin-left: 20%;
+    margin-left: 20px;
+    align-self: center;
   }
 `;
 

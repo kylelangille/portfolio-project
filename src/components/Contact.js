@@ -8,9 +8,11 @@ const Contact = () => {
     <Wrapper id="contact">
       <Heading>Contact</Heading>
       <Content>Have a question? Want to work with me?</Content>
-      <a href="mailto:kyle.a.langille@gmail.com">
-        <Button>Email me!</Button>
-      </a>
+      <Content>
+        <a href="mailto:kyle.a.langille@gmail.com">
+          <Button>Email me!</Button>
+        </a>
+      </Content>
     </Wrapper>
   );
 };
