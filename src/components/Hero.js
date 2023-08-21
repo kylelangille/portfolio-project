@@ -37,6 +37,7 @@ const HeroImg = styled.img`
   max-width: 25rem;
   max-height: 25rem;
   border-radius: 50%;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 820px) {
     max-width: 15rem;
