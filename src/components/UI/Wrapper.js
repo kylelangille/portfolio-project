@@ -5,11 +5,12 @@ const Wrapper = ({ children, id }) => {
 };
 
 const StyledWrapper = styled.section`
-  display: block;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 5rem;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: auto auto 5rem auto;
+  padding: 0 5rem;
 `;
 
 export default Wrapper;

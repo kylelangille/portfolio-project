@@ -7,6 +7,7 @@ const Content = ({ children }) => {
 const Text = styled.p`
   color: var(--lightest);
   font-size: 1.2rem;
+  align-self: flex-start;
 `;
 
 export default Content;

@@ -11,7 +11,9 @@ const Hero = () => {
         />
         <Content>
           <Heading>Hi, I'm Kyle!</Heading>
-          <SubHeading>A Web Developer based in St. John's, NL</SubHeading>
+          <SubHeading>
+            A Web Developer based in St. John's, Newfoundland
+          </SubHeading>
         </Content>
       </SubWrapper>
     </Wrapper>
@@ -20,9 +22,14 @@ const Hero = () => {
 
 const SubWrapper = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+  }
 `;
 
 const HeroImg = styled.img`
@@ -62,6 +69,10 @@ const Heading = styled.h1`
   @media (max-width: 820px) {
     font-size: 2.2rem;
   }
+
+  @media (max-width: 560px) {
+    margin-left: 20%;
+  }
 `;
 
 const SubHeading = styled.h2`
@@ -70,6 +81,14 @@ const SubHeading = styled.h2`
 
   @media (max-width: 820px) {
     font-size: 1.6rem;
+  }
+
+  @media (max-width: 775px) {
+    font-size: 1.4rem;
+  }
+
+  @media (max-width: 560px) {
+    text-align: center;
   }
 `;
 

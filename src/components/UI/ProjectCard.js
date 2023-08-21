@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, src, alt, repoLink, demoLink }) => {
 };
 
 const Card = styled.div`
-  width: 22rem;
+  /* width: 22rem; */
   background: var(--light);
   border-radius: 12px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
@@ -45,6 +45,11 @@ const Card = styled.div`
     background: var(--darkest);
     color: var(--lightest);
     transform: scale(1.1);
+  }
+
+  p {
+    width: 90%;
+    text-align: center;
   }
 `;
 

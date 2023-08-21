@@ -64,6 +64,11 @@ const Container = styled.div`
   align-items: center;
   width: 30rem;
   margin: 0 auto;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    margin: 0;
+  }
 `;
 
 export default About;
