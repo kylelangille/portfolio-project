@@ -6,7 +6,7 @@ const Hero = () => {
     <Wrapper id="hero">
       <SubWrapper>
         <HeroImg
-          src="moi-crop.jpg"
+          src="/assets/moi-crop.jpg"
           alt="Kyle Langille standing on a wharf with an old fishing community in the background"
         />
         <Content>
