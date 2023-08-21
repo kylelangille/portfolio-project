@@ -11,7 +11,7 @@ const Hero = () => {
         />
         <Content>
           <Heading>Hi, I'm Kyle!</Heading>
-          <SubHeading>A Web Developer based in St. John's, NL 🍁</SubHeading>
+          <SubHeading>A Web Developer based in St. John's, NL</SubHeading>
         </Content>
       </SubWrapper>
     </Wrapper>

@@ -56,9 +56,18 @@ const Projects = () => {
 };
 
 const ProjectContainer = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-bottom: 1rem;
+
+  @media (max-width: 1110px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 880px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default Projects;

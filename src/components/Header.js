@@ -34,6 +34,7 @@ const Wrapper = styled.header`
   top: 0;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
   min-width: 100%;
+  z-index: 10;
 `;
 
 const Nav = styled.nav`

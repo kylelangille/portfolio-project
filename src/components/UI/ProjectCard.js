@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, src, alt, repoLink, demoLink }) => {
 };
 
 const Card = styled.div`
-  width: 30rem;
+  width: 22rem;
   background: var(--light);
   border-radius: 12px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
@@ -37,6 +37,7 @@ const Card = styled.div`
     padding: 5px 10px;
     border: 1px solid var(--darkest);
     border-radius: 9px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
   }
 
