@@ -29,6 +29,11 @@ const HeroImg = styled.img`
   max-width: 25rem;
   max-height: 25rem;
   border-radius: 50%;
+
+  @media (max-width: 820px) {
+    max-width: 15rem;
+    max-height: 15rem;
+  }
 `;
 
 const Heading = styled.h1`
@@ -53,11 +58,19 @@ const Heading = styled.h1`
       border-color: transparent;
     }
   }
+
+  @media (max-width: 820px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const SubHeading = styled.h2`
   color: var(--lightest);
   font-size: 2.2rem;
+
+  @media (max-width: 820px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Content = styled.div`
