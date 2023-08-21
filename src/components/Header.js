@@ -1,30 +1,35 @@
+import { useState } from "react";
 import { styled } from "styled-components";
-import { Menu } from "./UI/Icons";
+import { Menu, Cross } from "./UI/Icons";
+import NavList from "./UI/NavList";
+import DropdownNav from "./UI/DropdownNav";
 
 const Header = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleDropdownOpen = () => {
+    setDropdownOpen(true);
+  };
+
+  const handleDropdownClose = () => {
+    setDropdownOpen(false);
+  };
+
   return (
-    <Wrapper>
-      <Nav>
-        <h2>Kyle Langille</h2>
-        <IconWrapper>
-          <Menu />
-        </IconWrapper>
-        <NavList>
-          <li>
-            <a href="#hero">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </NavList>
-      </Nav>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <Nav>
+          <h2>Kyle Langille</h2>
+          <IconWrapper
+            onClick={dropdownOpen ? handleDropdownClose : handleDropdownOpen}
+          >
+            {dropdownOpen ? <Cross /> : <Menu />}
+          </IconWrapper>
+          <NavList />
+        </Nav>
+      </Wrapper>
+      <IconWrapper>{dropdownOpen && <DropdownNav />}</IconWrapper>
+    </>
   );
 };
 
@@ -57,35 +62,6 @@ const IconWrapper = styled.div`
     display: block;
     position: absolute;
     right: 20px;
-  }
-`;
-
-const NavList = styled.ul`
-  list-style-type: none;
-
-  a {
-    color: var(--light);
-    text-decoration: none;
-    transition: 0.2s all ease-in-out;
-  }
-
-  a:hover {
-    color: var(--lightest);
-  }
-
-  li {
-    float: left;
-    margin-right: 2rem;
-    transition: 0.2s all ease-in-out;
-    font-size: 1.2rem;
-
-    @media (max-width: 800px) {
-      display: none;
-    }
-  }
-
-  li:hover {
-    transform: scale(1.1);
   }
 `;
 
