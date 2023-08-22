@@ -1,6 +1,17 @@
+import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 
 const Hero = () => {
+  const [animationStarted, setAnimationStarted] = useState(false);
+
+  useEffect(() => {
+    const animationTimeout = setTimeout(() => {
+      setAnimationStarted(true);
+    }, 500);
+
+    return () => clearTimeout(animationTimeout);
+  }, []);
+
   return (
     <HeroWrapper id="hero">
       <HeroImg
@@ -8,7 +19,9 @@ const Hero = () => {
         alt="Kyle Langille standing on a wharf with an old fishing community in the background"
       />
       <Content>
-        <HeroHeading>Hi, I'm Kyle!</HeroHeading>
+        <HeroHeading animationStarted={animationStarted}>
+          Hi, I'm Kyle!
+        </HeroHeading>
         <SubHeading>
           A Web Developer based in St. John's, Newfoundland
         </SubHeading>
