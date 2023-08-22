@@ -5,7 +5,7 @@ export const projectData = [
     src: "/assets/port.png",
     alt: "A screenshot of Kyle Langille's portfolio page",
     repoLink: "https://github.com/kylelangille/portfolio-project",
-    demoLink: "https://google.com",
+    demoLink: "https://kylelangille.com",
   },
   {
     title: "Fake Windows XP",
