@@ -19,8 +19,7 @@ const ProjectCard = ({ title, description, src, alt, repoLink, demoLink }) => {
 };
 
 const Card = styled.div`
-  /* width: 22rem; */
-  background: var(--light);
+  background: var(--darkest);
   border-radius: 12px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -31,8 +30,13 @@ const Card = styled.div`
   color: var(--darkest);
   position: relative;
 
+  h2 {
+    color: var(--light);
+  }
+
   a {
     color: var(--darkest);
+    background: var(--light);
     text-decoration: none;
     padding: 5px 10px;
     border: 1px solid var(--darkest);
@@ -42,14 +46,13 @@ const Card = styled.div`
   }
 
   a:hover {
-    background: var(--darkest);
-    color: var(--lightest);
     transform: scale(1.1);
   }
 
   p {
     width: 90%;
     text-align: center;
+    color: var(--lightest);
   }
 `;
 
