@@ -7,7 +7,7 @@ const Hero = () => {
   useEffect(() => {
     const animationTimeout = setTimeout(() => {
       setAnimationStarted(true);
-    }, 500);
+    }, 200);
 
     return () => clearTimeout(animationTimeout);
   }, []);
@@ -62,7 +62,10 @@ const HeroHeading = styled.h1`
   color: var(--light);
   margin-bottom: 1rem;
   width: 9.2ch;
-  animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
+  animation: ${(props) =>
+    props.animationStarted
+      ? "typing 1s steps(22), blink 0.5s step-end infinite alternate"
+      : "none"};
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
