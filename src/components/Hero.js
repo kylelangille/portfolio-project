@@ -3,26 +3,28 @@ import Wrapper from "./UI/Wrapper";
 
 const Hero = () => {
   return (
-    <Wrapper id="hero">
-      <SubWrapper>
-        <HeroImg
-          src="/assets/moi-crop.jpg"
-          alt="Kyle Langille standing on a wharf with an old fishing community in the background"
-        />
-        <Content>
-          <Heading>Hi, I'm Kyle!</Heading>
-          <SubHeading>
-            A Web Developer based in St. John's, Newfoundland
-          </SubHeading>
-        </Content>
-      </SubWrapper>
-    </Wrapper>
+    // <Wrapper id="hero">
+    <HeroWrapper id="hero">
+      <HeroImg
+        src="/assets/moi-crop.jpg"
+        alt="Kyle Langille standing on a wharf with an old fishing community in the background"
+      />
+      <Content>
+        <HeroHeading>Hi, I'm Kyle!</HeroHeading>
+        <SubHeading>
+          A Web Developer based in St. John's, Newfoundland
+        </SubHeading>
+      </Content>
+    </HeroWrapper>
+    // {/* </Wrapper> */}
   );
 };
 
-const SubWrapper = styled.div`
+const HeroWrapper = styled.section`
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: auto;
   height: 100vh;
 
   @media (max-width: 560px) {
@@ -45,7 +47,7 @@ const HeroImg = styled.img`
   }
 `;
 
-const Heading = styled.h1`
+const HeroHeading = styled.h1`
   font-size: 4rem;
   color: var(--light);
   margin-bottom: 1rem;
@@ -80,6 +82,7 @@ const Heading = styled.h1`
 const SubHeading = styled.h2`
   color: var(--lightest);
   font-size: 2.2rem;
+  width: 100%;
 
   @media (max-width: 820px) {
     font-size: 1.6rem;

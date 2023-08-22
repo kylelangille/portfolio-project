@@ -10,7 +10,11 @@ const StyledWrapper = styled.section`
   align-items: center;
   max-width: 100%;
   margin: auto auto 5rem auto;
-  padding: 0 5rem;
+  padding: 0 15rem;
+
+  @media (max-width: 1300px) {
+    padding: 0 5rem;
+  }
 `;
 
 export default Wrapper;
