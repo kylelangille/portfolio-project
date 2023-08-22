@@ -10,7 +10,7 @@ const Hero = () => {
     }, 200);
 
     return () => clearTimeout(animationTimeout);
-  }, []);
+  }, [animationStarted]);
 
   return (
     <HeroWrapper id="hero">

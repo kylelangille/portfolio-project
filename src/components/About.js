@@ -17,7 +17,7 @@ const About = () => {
       <Heading>About me</Heading>
       <div>
         <Content>
-          I am web developer who is passionate about life-long learning,
+          I am a web developer who is passionate about life-long learning,
           building things, and solving intricate problems.
         </Content>
         <br />

@@ -8,5 +8,9 @@ const IconContainer = withBaseIcon({ size: 24 });
 
 export const GitHubIcon = () => <IconContainer icon={github} />;
 export const LinkedInIcon = () => <IconContainer icon={linkedin} />;
-export const Menu = () => <IconContainer icon={menu} />;
-export const Cross = () => <IconContainer icon={cross} />;
+export const Menu = () => (
+  <IconContainer icon={menu} style={{ cursor: "pointer" }} />
+);
+export const Cross = () => (
+  <IconContainer icon={cross} style={{ cursor: "pointer" }} />
+);
