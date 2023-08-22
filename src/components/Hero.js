@@ -1,9 +1,7 @@
 import { styled } from "styled-components";
-import Wrapper from "./UI/Wrapper";
 
 const Hero = () => {
   return (
-    // <Wrapper id="hero">
     <HeroWrapper id="hero">
       <HeroImg
         src="/assets/moi-crop.jpg"
@@ -16,7 +14,6 @@ const Hero = () => {
         </SubHeading>
       </Content>
     </HeroWrapper>
-    // {/* </Wrapper> */}
   );
 };
 
