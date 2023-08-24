@@ -3,8 +3,9 @@ import { styled } from "styled-components";
 import { Menu, Cross } from "./UI/Icons";
 import NavList from "./UI/NavList";
 import DropdownNav from "./UI/DropdownNav";
+import ThemeToggle from "./UI/ThemeToggle";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleDropdownOpen = () => {
@@ -20,12 +21,15 @@ const Header = () => {
       <Wrapper>
         <Nav>
           <h2>Kyle Langille</h2>
-          <IconWrapper
-            onClick={dropdownOpen ? handleDropdownClose : handleDropdownOpen}
-          >
-            {dropdownOpen ? <Cross /> : <Menu />}
-          </IconWrapper>
-          <NavList />
+          <NavWrapper>
+            <IconWrapper
+              onClick={dropdownOpen ? handleDropdownClose : handleDropdownOpen}
+            >
+              {dropdownOpen ? <Cross /> : <Menu />}
+            </IconWrapper>
+            <NavList />
+            <ThemeToggle onClick={onClick} />
+          </NavWrapper>
         </Nav>
       </Wrapper>
       <IconWrapper>{dropdownOpen && <DropdownNav />}</IconWrapper>
@@ -47,12 +51,21 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  color: var(--light);
 
   h2 {
     margin-left: 2rem;
     font-size: 2.2rem;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 1);
+    color: #fff;
+  }
+`;
+
+const NavWrapper = styled.div`
+  display: flex;
+  margin-right: 2rem;
+
+  @media (max-width: 800px) {
+    margin-right: 1rem;
   }
 `;
 
@@ -62,7 +75,7 @@ const IconWrapper = styled.div`
   @media (max-width: 800px) {
     display: block;
     position: absolute;
-    right: 20px;
+    right: 6rem;
   }
 `;
 

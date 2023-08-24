@@ -31,10 +31,10 @@ const Foot = styled.footer`
   width: 7rem;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid var(--darkest);
+  border: 1px solid #000;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
-  background: var(--light);
+  background: ${({ theme }) => theme.tab};
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 `;
 

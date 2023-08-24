@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/GlobalStyles";
+import { darkTheme, lightTheme } from "./components/UI/Themes";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -8,7 +10,12 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
+  const [theme, setTheme] = useState("dark");
   const [animationStarted, setAnimationStarted] = useState(false);
+
+  const themeHandler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
 
   useEffect(() => {
     const animationTimeout = setTimeout(() => {
@@ -17,15 +24,18 @@ const App = () => {
 
     return () => clearTimeout(animationTimeout);
   }, [animationStarted]);
+
   return (
     <>
-      <GlobalStyles />
-      <Header />
-      <Hero animationStarted={animationStarted} />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <GlobalStyles />
+        <Header onClick={themeHandler} />
+        <Hero animationStarted={animationStarted} />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 };

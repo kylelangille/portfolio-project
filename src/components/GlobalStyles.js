@@ -49,12 +49,6 @@ h6 {
 }
 
 //
-:root {
-    --darkest: #1e2022;
-    --dark: #52616a;
-    --light: #c9d6de;
-    --lightest: #f0f5f9;
-}
 
 html {
     scroll-behavior: smooth;
@@ -62,7 +56,9 @@ html {
 
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    background: var(--dark);
+    background: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.50s linear;
 }
 
 ::-webkit-scrollbar {
@@ -71,15 +67,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--light);
+  background: #ececec;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--darkest);
+  background: #333;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #333;
+  background: #555;
 }
 
 `;

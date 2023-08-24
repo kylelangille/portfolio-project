@@ -23,13 +23,13 @@ const Nav = styled.ul`
   list-style-type: none;
 
   a {
-    color: var(--light);
+    color: #ececec;
     text-decoration: none;
     transition: 0.2s all ease-in-out;
   }
 
   a:hover {
-    color: var(--lightest);
+    color: #fff;
   }
 
   li {

@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 
 const Hero = (props) => {
@@ -49,7 +48,6 @@ const HeroImg = styled.img`
 
 const HeroHeading = styled.h1`
   font-size: 3.2rem;
-  color: var(--light);
   margin-bottom: 1rem;
   width: 9.2ch;
   animation: ${(props) =>
@@ -87,7 +85,6 @@ const HeroHeading = styled.h1`
 `;
 
 const SubHeading = styled.h2`
-  color: var(--lightest);
   font-size: 2rem;
   width: 100%;
 

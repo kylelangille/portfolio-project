@@ -22,16 +22,15 @@ const Button = styled.button`
   padding: 10px 20px;
   border-radius: 12px;
   border: none;
-  color: var(--darkest);
-  background: var(--lightest);
+  color: ${({ theme }) => theme.buttonText};
+  background: ${({ theme }) => theme.button};
   cursor: pointer;
   transition: 0.3s all ease-in-out;
   margin-top: 2rem;
   font-size: 1.2rem;
 
   &:hover {
-    color: var(--lightest);
-    background: var(--darkest);
+    color: ${({ theme }) => theme.buttonText};
     transform: scale(1.1);
   }
 `;

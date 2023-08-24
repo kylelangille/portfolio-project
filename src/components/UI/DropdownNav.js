@@ -26,7 +26,7 @@ const NavList = styled.ul`
   right: 0;
   top: 4rem;
   list-style-type: none;
-  background: var(--darkest);
+  background: #1e2022;
   padding-right: 40px;
   text-align: left;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
@@ -39,13 +39,13 @@ const NavList = styled.ul`
 
   a {
     text-decoration: none;
-    color: var(--light);
+    color: #ececec;
     font-size: 1.2rem;
     transition: 0.3s all ease-in-out;
   }
 
   a:hover {
-    color: var(--lightest);
+    color: #fff;
   }
 `;
 

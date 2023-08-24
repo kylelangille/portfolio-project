@@ -64,7 +64,6 @@ const TechContainer = styled.div`
   margin: 0 auto;
 
   h2 {
-    color: var(--light);
     margin-right: 1rem;
   }
 
