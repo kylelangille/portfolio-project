@@ -10,10 +10,18 @@ const StyledWrapper = styled.section`
   align-items: center;
   max-width: 100%;
   margin: auto auto 5rem auto;
-  padding: 0 15rem;
+  padding: 0 20rem;
 
   @media (max-width: 1300px) {
+    padding: 0 10rem;
+  }
+
+  @media (max-width: 800px) {
     padding: 0 5rem;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 2rem;
   }
 `;
 

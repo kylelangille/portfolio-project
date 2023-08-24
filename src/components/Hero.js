@@ -1,17 +1,7 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 
-const Hero = () => {
-  const [animationStarted, setAnimationStarted] = useState(false);
-
-  useEffect(() => {
-    const animationTimeout = setTimeout(() => {
-      setAnimationStarted(true);
-    }, 200);
-
-    return () => clearTimeout(animationTimeout);
-  }, [animationStarted]);
-
+const Hero = (props) => {
   return (
     <HeroWrapper id="hero">
       <HeroImg
@@ -19,7 +9,7 @@ const Hero = () => {
         alt="Kyle Langille standing on a wharf with an old fishing community in the background"
       />
       <Content>
-        <HeroHeading animationStarted={animationStarted}>
+        <HeroHeading $animationStarted={props.animationStarted}>
           Hi, I'm Kyle!
         </HeroHeading>
         <SubHeading>
@@ -37,7 +27,7 @@ const HeroWrapper = styled.section`
   margin: auto;
   height: 100vh;
 
-  @media (max-width: 560px) {
+  @media (max-width: 1050px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -46,8 +36,8 @@ const HeroWrapper = styled.section`
 `;
 
 const HeroImg = styled.img`
-  max-width: 25rem;
-  max-height: 25rem;
+  max-width: 20rem;
+  max-height: 20rem;
   border-radius: 50%;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 
@@ -58,12 +48,12 @@ const HeroImg = styled.img`
 `;
 
 const HeroHeading = styled.h1`
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: var(--light);
   margin-bottom: 1rem;
   width: 9.2ch;
   animation: ${(props) =>
-    props.animationStarted
+    props.$animationStarted
       ? "typing 1s steps(22), blink 0.5s step-end infinite alternate"
       : "none"};
   white-space: nowrap;
@@ -82,6 +72,10 @@ const HeroHeading = styled.h1`
     }
   }
 
+  @media (max-width: 1200px) {
+    font-size: 2.6rem;
+  }
+
   @media (max-width: 820px) {
     font-size: 2.2rem;
   }
@@ -94,15 +88,19 @@ const HeroHeading = styled.h1`
 
 const SubHeading = styled.h2`
   color: var(--lightest);
-  font-size: 2.2rem;
+  font-size: 2rem;
   width: 100%;
 
-  @media (max-width: 820px) {
+  @media (max-width: 1200px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 900px) {
     font-size: 1.6rem;
   }
 
-  @media (max-width: 775px) {
-    font-size: 1.4rem;
+  @media (max-width: 820px) {
+    font-size: 1.6rem;
   }
 
   @media (max-width: 560px) {
@@ -114,6 +112,14 @@ const Content = styled.div`
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1050px) {
+    align-items: center;
+  }
+
+  @media (max-width: 700px) {
+    width: 20rem;
+  }
 `;
 
 export default Hero;

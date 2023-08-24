@@ -33,8 +33,9 @@ const ProjectContainer = styled.div`
   gap: 20px;
   margin-bottom: 1rem;
   align-self: flex-start;
+  max-width: 100%;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
