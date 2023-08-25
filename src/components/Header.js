@@ -85,10 +85,6 @@ const IconWrapper = styled.div`
     position: absolute;
     right: 6rem;
   }
-
-  @media (max-width: 400px) {
-    right: 5rem;
-  }
 `;
 
 export default Header;
