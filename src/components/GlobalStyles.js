@@ -63,7 +63,6 @@ body {
 
 ::-webkit-scrollbar {
   width: 20px;
-  
 }
 
 ::-webkit-scrollbar-track {
@@ -78,5 +77,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
 `;

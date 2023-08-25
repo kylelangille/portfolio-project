@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 
 const About = () => {
-  const iconAttributes = { fontSize: "42px", color: "var(--lightest)" };
+  const iconAttributes = { fontSize: "42px" };
 
   return (
     <Wrapper id="about">

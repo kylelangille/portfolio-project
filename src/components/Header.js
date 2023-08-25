@@ -57,6 +57,14 @@ const Nav = styled.nav`
     font-size: 2.2rem;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 1);
     color: #fff;
+
+    @media (max-width: 800px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1.6rem;
+    }
   }
 `;
 
@@ -76,6 +84,10 @@ const IconWrapper = styled.div`
     display: block;
     position: absolute;
     right: 6rem;
+  }
+
+  @media (max-width: 400px) {
+    right: 5rem;
   }
 `;
 

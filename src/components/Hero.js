@@ -58,12 +58,6 @@ const HeroHeading = styled.h1`
   overflow: hidden;
   border-right: 3px solid;
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-
   @keyframes blink {
     50% {
       border-color: transparent;
