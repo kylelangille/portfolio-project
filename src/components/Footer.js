@@ -41,6 +41,11 @@ const Foot = styled.footer`
 const Link = styled.a`
   color: #000;
   padding: 5px 0;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export default Footer;

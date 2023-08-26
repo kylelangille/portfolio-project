@@ -56,7 +56,6 @@ const Nav = styled.nav`
     margin-left: 2rem;
     font-size: 2.2rem;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 1);
-    /* color: #fff; */
     color: ${({ theme }) => theme.headingText};
 
     @media (max-width: 800px) {
