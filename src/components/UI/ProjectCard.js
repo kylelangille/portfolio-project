@@ -29,10 +29,6 @@ const Card = styled.div`
   gap: 10px;
   position: relative;
 
-  h2 {
-    color: ${({ theme }) => theme.headingText};
-  }
-
   a {
     color: ${({ theme }) => theme.body};
     background: ${({ theme }) => theme.text};

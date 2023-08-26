@@ -1,6 +1,34 @@
+import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 
 const Hero = (props) => {
+  const [clickCount, setClickCount] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleClickCount = () => {
+    setClickCount((prevCount) => prevCount + 1);
+  };
+
+  const handleMouseMove = (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    setMousePosition({ x, y });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  const movementX = (mousePosition.x - window.innerWidth / 2) / 100;
+  const movementY = (mousePosition.y - window.innerHeight / 2) / 100;
+
+  const imgPosition = {
+    transform: `translate(${movementX}px, ${movementY}px)`,
+  };
+
   return (
     <HeroWrapper id="hero">
       <ImgContainer>
@@ -12,8 +40,15 @@ const Hero = (props) => {
           }
         />
         <HeroImg
-          src="/assets/moi-crop.jpg"
-          alt="Kyle Langille standing on a wharf with an old fishing community in the background"
+          key={clickCount}
+          src={
+            clickCount < 5
+              ? "/assets/headshot.jpg"
+              : "/assets/handsome-crop.jpg"
+          }
+          alt="Headshot of Kyle Langille"
+          onClick={handleClickCount}
+          style={imgPosition}
         />
       </ImgContainer>
       <Content>
@@ -84,7 +119,7 @@ const HeroHeading = styled.h1`
   overflow: hidden;
   border-right: 3px solid;
   color: ${({ theme }) => theme.headingText};
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 2px #000;
 
   @keyframes blink {
     50% {
@@ -112,10 +147,6 @@ const SubHeading = styled.h2`
 
   @media (max-width: 1200px) {
     font-size: 1.8rem;
-  }
-
-  @media (max-width: 900px) {
-    font-size: 1.6rem;
   }
 
   @media (max-width: 820px) {

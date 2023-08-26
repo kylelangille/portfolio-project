@@ -39,7 +39,7 @@ const ProjectContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 880px) {
+  @media (max-width: 920px) {
     grid-template-columns: 1fr;
   }
 `;
