@@ -45,7 +45,7 @@ const NavList = styled.ul`
   }
 
   a:hover {
-    color: #fff;
+    color: ${({ theme }) => theme.headingText};
   }
 `;
 

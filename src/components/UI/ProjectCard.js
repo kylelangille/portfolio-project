@@ -29,9 +29,13 @@ const Card = styled.div`
   gap: 10px;
   position: relative;
 
+  h2 {
+    color: ${({ theme }) => theme.headingText};
+  }
+
   a {
-    color: ${({ theme }) => theme.buttonText};
-    background: ${({ theme }) => theme.button};
+    color: ${({ theme }) => theme.body};
+    background: ${({ theme }) => theme.text};
     text-decoration: none;
     padding: 5px 10px;
     border: 1px solid #000;
@@ -42,6 +46,8 @@ const Card = styled.div`
 
   a:hover {
     transform: scale(1.1);
+    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.body};
   }
 
   p {

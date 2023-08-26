@@ -3,10 +3,19 @@ import { styled } from "styled-components";
 const Hero = (props) => {
   return (
     <HeroWrapper id="hero">
-      <HeroImg
-        src="/assets/moi-crop.jpg"
-        alt="Kyle Langille standing on a wharf with an old fishing community in the background"
-      />
+      <ImgContainer>
+        <Blob
+          src={
+            props.theme === "dark"
+              ? "/assets/blob.png"
+              : "/assets/blobAccent.png"
+          }
+        />
+        <HeroImg
+          src="/assets/moi-crop.jpg"
+          alt="Kyle Langille standing on a wharf with an old fishing community in the background"
+        />
+      </ImgContainer>
       <Content>
         <HeroHeading $animationStarted={props.animationStarted}>
           Hi, I'm Kyle!
@@ -34,6 +43,23 @@ const HeroWrapper = styled.section`
   }
 `;
 
+const ImgContainer = styled.div`
+  position: relative;
+`;
+
+const Blob = styled.img`
+  z-index: -1;
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+  height: 25rem;
+  width: 25rem;
+
+  @media (max-width: 820px) {
+    transform: rotate(270deg);
+  }
+`;
+
 const HeroImg = styled.img`
   max-width: 20rem;
   max-height: 20rem;
@@ -57,6 +83,8 @@ const HeroHeading = styled.h1`
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+  color: ${({ theme }) => theme.headingText};
+  -webkit-text-stroke: 1px #000;
 
   @keyframes blink {
     50% {
@@ -96,6 +124,7 @@ const SubHeading = styled.h2`
 
   @media (max-width: 560px) {
     text-align: center;
+    font-size: 1.4rem;
   }
 `;
 

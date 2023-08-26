@@ -70,7 +70,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--darkest);
   background: #333;
 }
 

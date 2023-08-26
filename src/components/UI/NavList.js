@@ -29,7 +29,7 @@ const Nav = styled.ul`
   }
 
   a:hover {
-    color: #fff;
+    color: ${({ theme }) => theme.headingText};
   }
 
   li {
