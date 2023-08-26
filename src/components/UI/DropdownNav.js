@@ -30,7 +30,7 @@ const NavList = styled.ul`
   padding-right: 40px;
   text-align: left;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 10;
   border-bottom-left-radius: 12px;
 
   li {
