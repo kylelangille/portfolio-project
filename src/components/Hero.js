@@ -121,6 +121,12 @@ const HeroHeading = styled.h1`
   color: ${({ theme }) => theme.headingText};
   -webkit-text-stroke: 2px #000;
 
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
   @keyframes blink {
     50% {
       border-color: transparent;
