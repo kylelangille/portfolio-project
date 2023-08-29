@@ -4,16 +4,16 @@
 
 This website was built using React and JavaScript as a project for Concordia's Full Stack Web Development Bootcamp. It is hosted on Netlify at [kylelangille.com](kylelangille.com).
 
-The criteria for the project as defiend by Concordia were such that the portfolio contain a Hero section, an About Me section, a project showcase, and a functioning Contact section. Additionally, the portfolio must be responsive and viewable on all modern devcies.
+The criteria for the project as defined by Concordia were such that the portfolio contain a "hero" section, an "about me" section, a project showcase, and a functioning "contact" section. Additionally, the portfolio must be responsive and viewable on all modern devices.
 
 ## Additional Features
 
 - Smooth scrolling effect through the navigation bar
 - Dark/light mode toggle
 - CSS animations:
-  - A typing animation on the heading in the Hero section
-  - The image in the Hero section "follows" the cursor
-- A "super secret" Easter Egg (HINT: click the Hero image repeatedly)
+  - A typing animation on the heading in the hero section
+  - The image in the hero section "follows" the cursor
+- A "super secret" Easter egg (HINT: click the Hero image repeatedly)
 
 ## Design and Thought Process
 
@@ -27,7 +27,7 @@ The criteria for the project as defiend by Concordia were such that the portfoli
 
 ## Future Plans
 
-- Minimalism is (mostly) easy, but making a minimalist yet aesthetically engaging design is profoundly more challenging. I would like to add some more "flair" to the individual sections while still embracing the overall minimalist approach of the overall design. Once I know what that looks like for this project, I'll let you know 😄.
-- I intent to break my soft "no routing" rule to implement a page for my CV that is a viewable and downloadable .PDF file.
+- Minimalism is (mostly) easy, but making a minimalist yet aesthetically engaging design is profoundly more challenging. I would like to add some more "flair" to the individual sections while still embracing the minimalist approach of the overall design. Once I know what that looks like for this project, I'll let you know 😄.
+- I intend to break my soft "no routing" rule to implement a page for my CV that is a viewable and downloadable .PDF file.
 - Adding more robust projects that better showcase my abilities.
   - Currently, all of the showcased projects were originally built before enrolling in the Concordia Bootcamp. While I am still proud of them (to some extent...) I have grown more as a developer since building them, and as such they do not fully demonstrate my abilities as a developer.
