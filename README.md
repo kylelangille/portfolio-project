@@ -2,7 +2,7 @@
 
 ## About
 
-This website was built using React and JavaScript as a project for Concordia's Full Stack Web Development Bootcamp. It is hosted on Netlify at [https://kylelangille.com](kylelangille.com).
+This website was built using React and JavaScript as a project for Concordia's Full Stack Web Development Bootcamp. It is hosted on Netlify at [kylelangille.com](https://kylelangille.com).
 
 The criteria for the project as defined by Concordia were such that the portfolio contain a "hero" section, an "about me" section, a project showcase, and a functioning "contact" section. Additionally, the portfolio must be responsive and viewable on all modern devices.
 
@@ -23,7 +23,7 @@ The criteria for the project as defined by Concordia were such that the portfoli
 
 - For the colour scheme, I leaned on [RealTimeColors](https://realtimecolors.com/). This is an incredibly helpful tool that enables the user to workshop colour schemes by applying the colours to a mock-up website.
 - To implement the dark/light mode toggler, I drew heavily from [this article](https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/) from Blessing Krofegha.
-- I intend to continue using this portfolio as I move into the industry, so I purchased the [https://kylelangille.com](kylelangille.com) domain from [PorkBun](https://porkbun.com) and rerouted the deployed site on Netlify accordingly.
+- I intend to continue using this portfolio as I move into the industry, so I purchased the [kylelangille.com](https://kylelangille.com) domain from [PorkBun](https://porkbun.com) and rerouted the deployed site on Netlify accordingly.
 
 ## Future Plans
 
