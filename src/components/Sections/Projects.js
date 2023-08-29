@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
-import Wrapper from "./UI/Wrapper";
-import Heading from "./UI/Heading";
-import ProjectCard from "./UI/ProjectCard";
-import Content from "./UI/Content";
-import { projectData } from "../projectData";
+import Wrapper from "../Helpers/Wrapper";
+import Heading from "../Helpers/Heading";
+import ProjectCard from "../UI/ProjectCard";
+import Content from "../Helpers/Content";
+import { projectData } from "../../projectData";
 
 const Projects = () => {
   return (

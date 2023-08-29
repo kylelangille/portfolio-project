@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
-import GlobalStyles from "./components/GlobalStyles";
-import { darkTheme, lightTheme } from "./components/UI/Themes";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import GlobalStyles from "./components/Styles/GlobalStyles";
+import { darkTheme, lightTheme } from "./components/Styles/Themes";
+import Header from "./components/Sections/Header";
+import Hero from "./components/Sections/Hero";
+import About from "./components/Sections/About";
+import Projects from "./components/Sections/Projects";
+import Contact from "./components/Sections/Contact";
+import Footer from "./components/Sections/Footer";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");

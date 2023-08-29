@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { GitHubIcon, LinkedInIcon } from "./UI/Icons";
+import { GitHubIcon, LinkedInIcon } from "../UI/Icons";
 
 const Footer = () => {
   return (

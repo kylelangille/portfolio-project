@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Wrapper from "./UI/Wrapper";
-import Heading from "./UI/Heading";
-import Content from "./UI/Content";
+import Wrapper from "../Helpers/Wrapper";
+import Heading from "../Helpers/Heading";
+import Content from "../Helpers/Content";
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";

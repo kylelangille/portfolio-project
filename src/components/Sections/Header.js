@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { styled } from "styled-components";
-import { Menu, Cross } from "./UI/Icons";
-import NavList from "./UI/NavList";
-import DropdownNav from "./UI/DropdownNav";
-import ThemeToggle from "./UI/ThemeToggle";
+import { Menu, Cross } from "../UI/Icons";
+import NavList from "../UI/NavList";
+import DropdownNav from "../UI/DropdownNav";
+import ThemeToggle from "../UI/ThemeToggle";
 
 const Header = ({ onClick }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
