@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Kyle Langille's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+This website was built using React and JavaScript as a project for Concordia's Full Stack Web Development Bootcamp. It is hosted on Netlify at [kylelangille.com](kylelangille.com).
 
-In the project directory, you can run:
+The criteria for the project as defiend by Concordia were such that the portfolio contain a Hero section, an About Me section, a project showcase, and a functioning Contact section. Additionally, the portfolio must be responsive and viewable on all modern devcies.
 
-### `npm start`
+## Additional Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Smooth scrolling effect through the navigation bar
+- Dark/light mode toggle
+- CSS animations:
+  - A typing animation on the heading in the Hero section
+  - The image in the Hero section "follows" the cursor
+- A "super secret" Easter Egg (HINT: click the Hero image repeatedly)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Design and Thought Process
 
-### `npm test`
+- I wanted a minimalist but sharp design. I wanted to avoid the portfolio looking bland, while also ensuring that the design was not "cluttered" or too "busy". This approach applied to both the colour scheme and the overall layout.
+- I wanted a scrollable page with minimal to no routing.
+- I wanted the project showcase to be informative, but also incredibly minimal in keeping with the overall design.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- For the colour scheme, I leaned on [RealTimeColors](https://realtimecolors.com/). This is an incredibly helpful tool that enables the user to workshop colour schemes by applying the colours to a mock-up website.
+- To implement the dark/light mode toggler, I drew heavily from [this article](https://www.smashingmagazine.com/2020/04/dark-mode-react-apps-styled-components/) from Blessing Krofegha.
+- I intend to continue using this portfolio as I move into the industry, so I purchased the [kylelangille.com](kylelangille.com) domain from [PorkBun](https://porkbun.com) and rerouted the deployed site on Netlify accordingly.
 
-### `npm run build`
+## Future Plans
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Minimalism is (mostly) easy, but making a minimalist yet aesthetically engaging design is profoundly more challenging. I would like to add some more "flair" to the individual sections while still embracing the overall minimalist approach of the overall design. Once I know what that looks like for this project, I'll let you know 😄.
+- I intent to break my soft "no routing" rule to implement a page for my CV that is a viewable and downloadable .PDF file.
+- Adding more robust projects that better showcase my abilities.
+  - Currently, all of the showcased projects were originally built before enrolling in the Concordia Bootcamp. While I am still proud of them (to some extent...) I have grown more as a developer since building them, and as such they do not fully demonstrate my abilities as a developer.
