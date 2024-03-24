@@ -8,6 +8,7 @@ import { FaCss3 } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
 
 const About = () => {
   const iconAttributes = { fontSize: "42px" };
@@ -45,6 +46,7 @@ const About = () => {
           <FaCss3 style={iconAttributes} />
           <FaJsSquare style={iconAttributes} />
           <FaReact style={iconAttributes} />
+          <DiMongodb style={iconAttributes} />
           <FaGitAlt style={iconAttributes} />
         </IconContainer>
       </TechContainer>
@@ -60,7 +62,7 @@ const IconContainer = styled.div`
 const TechContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 30rem;
+  width: 32rem;
   margin: 0 auto;
 
   h2 {
