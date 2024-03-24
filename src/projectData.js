@@ -1,5 +1,14 @@
 export const projectData = [
   {
+    title: "ReciPZ",
+    description:
+      "A minimalist full-stack social media application for posting and sharing recipes with other users.",
+    src: "/assets/rpz.png",
+    alt: "A screenshot of ReciPZ",
+    repoLink: "https://github.com/kylelangille/recipz",
+    demoLink: null,
+  },
+  {
     title: "Portfolio Page",
     description: "My portfolio page. Made with React and JavaScript.",
     src: "/assets/port.png",
