@@ -26,17 +26,18 @@ const App = () => {
   }, [animationStarted]);
 
   return (
-    <>
-      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
-        <GlobalStyles />
-        <Header onClick={themeHandler} />
-        <Hero animationStarted={animationStarted} theme={theme} />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
-      </ThemeProvider>
-    </>
+    // <>
+      // <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+      //   <GlobalStyles />
+      //   <Header onClick={themeHandler} />
+      //   <Hero animationStarted={animationStarted} theme={theme} />
+      //   <About />
+      //   <Projects />
+      //   <Contact />
+      //   <Footer />
+      // </ThemeProvider>
+    // </>
+    <p>ahahahahahahahahahahahah</p>
   );
 };
 
